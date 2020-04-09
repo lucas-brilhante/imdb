@@ -15,10 +15,13 @@ nav .menu .button-group {
    width: 50%;
    justify-content: space-between;
    align-items: center;
+   height: 100%;
 }
 
 nav .menu .button-group .button{
-    height: calc(100%-5px);
+    display: flex;
+    align-items: center;
+    height: 100%;
     align-items: center;
     cursor: pointer;
 }

@@ -1,0 +1,38 @@
+nav{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav .menu {
+    display: flex;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    justify-content: space-around;
+    height: 60px;
+}
+
+nav .menu .button-group {
+   display: flex;
+   width: 50%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav .menu .button-group .button{
+    height: calc(100%-5px);
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .menu .button-group .button a{
+    color: #e4bb23;
+    font-weight: bolder;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .menu .button-group .button:hover{
+    border-bottom: 1px solid #e4bb23;
+    padding-top: 2px;
+}

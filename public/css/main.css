@@ -1,0 +1,129 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main .grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0 15px 0;
+    justify-content: space-between;
+}
+main .grid .card {
+    display: flex;
+    flex: 1 1 235px;
+    max-width: 235px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+main .grid .card .image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+main .grid .card img {
+    width: 100%;
+    height: auto;
+    /*border-top-left-radius: 8px;
+    border-top-right-radius: 8px;*/
+}
+
+main .grid .card .image .info{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: #e4bb23;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    text-decoration: none;
+}
+
+main .grid .card:hover .image .info{
+    visibility: visible;
+    opacity: 1;
+}    
+
+main .grid .card .image .info h1{
+    color: #e4bb23;
+    margin-bottom: 10px;
+}
+
+main .grid .card .image .fa{
+    color: white;
+    transition: color 0.3s;
+}
+
+main .grid .card .image .fa:hover{
+    color: #e4bb23;
+}
+
+main .grid .card .synopsis {
+    display: flex;
+    height: 90px;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+main .grid .card h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+main .grid .card a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #e4bb23;
+    cursor: pointer;
+}
+
+main .grid .card a:hover {
+	text-decoration: underline;
+}
+
+main .grid .card .rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .grid .card .rating p {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+main .grid .card .rating .fa-heart{
+    color: #bababa;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main .grid .card .rating .fa-heart:hover{
+    color: #e95950;
+}

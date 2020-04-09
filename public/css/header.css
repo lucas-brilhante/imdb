@@ -1,0 +1,150 @@
+header {
+    display: flex;
+    background-image: url(../img/capa-madmax2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    justify-content: center;
+}
+
+header:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+    content: "";
+    top: 0;
+    left: 0;
+	height: 100%;
+    width: 100%;
+	position: absolute;
+}
+
+header .container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px 20px;
+    z-index: 1;
+}
+
+header .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-container .link-group{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    max-width: 400px;
+}
+
+header .menu-container .link-group a{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;    
+    padding: 10px;
+}
+
+header .menu-container .link-group a:hover{
+    color: #e4bb23;
+}
+
+header .menu-container .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-container .user-info img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+header .menu-container .user-info p{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+header .container h2 {
+    color: #fff;
+    font-size: 6.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+header .container .movie-info{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+header .container .movie-info .genrer {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+header .container .movie-info .genrer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    font-size: 13px;
+}
+
+header .container .movie-info .genrer a:hover{
+    color: #e4bb23;
+}
+
+header .container .movie-info .watch-button {
+    display: inline-block;
+    padding: 15px 50px;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #e4bb23;
+    border-radius: 40px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+header .container .movie-info .watch-button:hover{
+    background-color: #bc9a1d;
+}
+
+header .container .release-date p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+header .container .release-date p+p{
+    color: #bc9a1d;
+}
+
